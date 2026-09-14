@@ -2,10 +2,10 @@
    YADAR Consulting - Interactive Functionality & Bilingual Engine
    ========================================================================== */
 
-// Email Configuration (Runs 100% in browser via Live Server Port 5500 - No Node.js required!)
+// Email Configuration (Production Site: https://markramy1.github.io/YADAR_Consulting/ - No Node.js required!)
 const FORM_CONFIG = {
   RECIPIENT_EMAIL: "marksho8lkdp@gmail.com",
-  DEV_PORT: 5500
+  SITE_URL: "https://markramy1.github.io/YADAR_Consulting/"
 };
 
 // Bilingual Translation Dictionary
@@ -543,7 +543,7 @@ function initContactForm() {
     }
 
     try {
-      // Dispatches directly via FormSubmit AJAX — works on Live Server (Port 5500) without Node.js!
+      // Dispatches directly via FormSubmit AJAX — works on https://markramy1.github.io/YADAR_Consulting/ without Node.js!
       const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(FORM_CONFIG.RECIPIENT_EMAIL)}`, {
         method: "POST",
         headers: {
