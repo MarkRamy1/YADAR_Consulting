@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YADAR Consulting | يدار للاستشارات - Administrative, HR & Marketing Advisory</title>
+  <meta name="description" content="YADAR Consulting provides strategic administrative consulting, human resources transformation, and data-driven market research services across the GCC and Middle East.">
+  <meta name="keywords" content="YADAR, يدار, Administrative Consulting, HR Consulting, Market Research, Strategy, Organizational Transformation, Saudi Arabia, GCC">
+  <link rel="icon" type="image/jpeg" href="logo.jpeg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== TOP NAVIGATION ==================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-inner">
+      <!-- Brand Identity -->
+      <a href="#hero" class="brand-container" id="brand-link">
+        <div class="brand-logo-badge">
+          <img src="logo.jpeg" alt="يدار - YADAR Consulting Logo" width="44" height="44">
+        </div>
+        <div class="brand-text-col">
+          <div class="brand-title-wrap">
+            <span class="brand-name-en">YADAR</span>
+            <span class="brand-name-ar">يدار</span>
+          </div>
+          <span class="brand-tagline" data-i18n="nav.tagline">Strategic & Management Advisory</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active" data-i18n="nav.home">Home</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">About Us</a>
+        <a href="#services" class="nav-link" data-i18n="nav.services">Services</a>
+        <a href="#methodology" class="nav-link" data-i18n="nav.methodology">Methodology</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Language Switcher & CTA) -->
+      <div class="nav-actions">
+        <button type="button" class="lang-switch-btn" id="lang-toggle-btn" aria-label="Change Language">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+          <span id="lang-btn-label">العربية</span>
+        </button>
+
+        <a href="#contact" class="btn-cta-nav" data-i18n="nav.requestCta">
+          <span>Request Consultation</span>
+          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobile-nav-toggle" aria-label="Open Navigation Menu">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="hero">
+    <!-- Geometric decorative accents matching mockup -->
+    <div class="hero-bg-accent"></div>
+    <div class="hero-bg-glow"></div>
+
+    <div class="container hero-grid">
+      <!-- Hero Text Column -->
+      <div class="hero-text-col">
+        <div class="hero-pill-badge">
+          <span class="dot"></span>
+          <span data-i18n="hero.badge">Institutional Excellence & Advisory</span>
+        </div>
+        <h1 class="hero-title">
+          <span data-i18n="hero.title">Modern Solutions</span><br>
+          <span class="highlight" data-i18n="hero.titleHighlight">Strategic Impact.</span>
+        </h1>
+        <p class="hero-subtext" data-i18n="hero.subtitle">
+          Empowering visionary organizations through bespoke Administrative Consulting, Human Capital Transformation, and Data-Driven Market Research.
+        </p>
+        <div class="hero-buttons">
+          <a href="#services" class="btn-primary-hero" data-i18n="hero.getStarted">
+            <span>Explore Services</span>
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </a>
+          <a href="#contact" class="btn-secondary-hero" data-i18n="hero.bookConsultation">
+            <span data-i18n="hero.bookConsultation">Book Consultation</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Showcase Card -->
+      <div class="hero-visual-col">
+        <div class="hero-preview-card">
+          <div class="preview-header">
+            <span class="preview-badge" data-i18n="hero.previewBadge">Core Advisory Pillars</span>
+            <div style="display: flex; gap: 6px;">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #ef4444; display: inline-block;"></span>
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #f59e0b; display: inline-block;"></span>
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #10b981; display: inline-block;"></span>
+            </div>
+          </div>
+
+          <!-- Preview Items for the 3 Pillars -->
+          <div class="preview-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon-box">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+              </div>
+              <div class="pillar-info">
+                <h4 data-i18n="services.items.0.title">Administrative Consulting</h4>
+                <p>Structure, Process & Strategy</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+              </div>
+              <div class="pillar-info">
+                <h4 data-i18n="services.items.1.title">Human Resources Consulting</h4>
+                <p>Talent, Compensation & Culture</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+              </div>
+              <div class="pillar-info">
+                <h4 data-i18n="services.items.2.title">Marketing & Market Research</h4>
+                <p>Surveys, Campaigns & Growth</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Metrics inside hero card -->
+          <div class="preview-stats-row">
+            <div class="stat-box">
+              <h5 data-i18n="hero.stat1Val">100+</h5>
+              <p data-i18n="hero.stat1Label">Projects</p>
+            </div>
+            <div class="stat-box">
+              <h5 data-i18n="hero.stat2Val">98%</h5>
+              <p data-i18n="hero.stat2Label">Satisfaction</p>
+            </div>
+            <div class="stat-box">
+              <h5 data-i18n="hero.stat3Val">100%</h5>
+              <p data-i18n="hero.stat3Label">Strategic Focus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT US SECTION (Mockup Layout) ==================== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-tag" data-i18n="about.tag">Who We Are</div>
+      <h2 class="section-heading-main" data-i18n="about.mainTitle">Driving Institutional Innovation Since 2023</h2>
+
+      <!-- Mockup Layered Offset Card Structure -->
+      <div class="mockup-layered-card-wrapper">
+        <!-- Deep Purple Pattern Backplate -->
+        <div class="card-backplate"></div>
+
+        <!-- Forefront White Card -->
+        <div class="card-forefront">
+          <div class="about-card-grid">
+            <div class="about-info-col">
+              <span class="badge-who-we-are" data-i18n="about.tag">WHO WE ARE</span>
+              <h3 class="about-card-title" data-i18n="about.mainTitle">Driving Institutional Innovation Since 2023</h3>
+              <p class="about-lead-para" data-i18n="about.leadPara">
+                YADAR Consulting is an elite management and institutional consulting firm dedicated to guiding organizations toward agile governance, sustainable growth, and workforce excellence.
+              </p>
+              <p class="about-second-para" data-i18n="about.secondPara">
+                We partner with visionary enterprises and government entities to design resilient organizational architectures, optimize operational lifecycles, and execute data-backed market strategies that deliver enduring value.
+              </p>
+
+              <!-- Strategic Highlights -->
+              <div class="about-highlights-row">
+                <div class="highlight-box">
+                  <span class="icon">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                  </span>
+                  <div>
+                    <h5 data-i18n="about.highlight1Title">Strategic Governance</h5>
+                    <p data-i18n="about.highlight1Desc">Precision structural design aligned with executive goals.</p>
+                  </div>
+                </div>
+
+                <div class="highlight-box">
+                  <span class="icon">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                  </span>
+                  <div>
+                    <h5 data-i18n="about.highlight2Title">Data Intelligence</h5>
+                    <p data-i18n="about.highlight2Desc">Deep market studies empowering decisive executive leadership.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Illustration Side matching mockup -->
+            <div class="about-illustration-wrap">
+              <img src="about-illustration.jpg" alt="Consulting Strategy & Roadmap Analysis" width="520" height="390" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION (The 3 Pillars) ==================== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-tag" data-i18n="services.tag">Our Expertise</span>
+        <h2 data-i18n="services.title">Comprehensive Consulting Services</h2>
+        <p data-i18n="services.subtitle">
+          Tailored strategic advisory across three foundational pillars to elevate organizational competitiveness and operational resilience.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="services-filter-nav">
+        <button type="button" class="filter-btn active" data-filter="all" data-i18n="services.filterAll">All Services</button>
+        <button type="button" class="filter-btn" data-filter="admin" data-i18n="services.filterAdmin">Administrative</button>
+        <button type="button" class="filter-btn" data-filter="hr" data-i18n="services.filterHR">Human Resources</button>
+        <button type="button" class="filter-btn" data-filter="marketing" data-i18n="services.filterMarketing">Marketing & Research</button>
+      </div>
+
+      <!-- Dynamic Services Cards Grid (Rendered by script.js) -->
+      <div class="services-grid" id="services-grid-container">
+        <!-- Rendered automatically via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONSULTING METHODOLOGY ==================== -->
+  <section class="methodology-section" id="methodology">
+    <div class="container">
+      <div class="section-header-center">
+        <span class="section-tag" data-i18n="methodology.tag">How We Deliver</span>
+        <h2 data-i18n="methodology.title">Our Consultative Methodology</h2>
+        <p data-i18n="methodology.subtitle">
+          A structured, milestone-driven framework designed to ensure seamless transformation and sustainable performance.
+        </p>
+      </div>
+
+      <div class="process-steps-grid">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-num-circle">01</div>
+          <h4 data-i18n="methodology.step1Title">Diagnostic & Assessment</h4>
+          <p data-i18n="methodology.step1Desc">In-depth audit of current structures, operational bottlenecks, and market opportunities.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-num-circle">02</div>
+          <h4 data-i18n="methodology.step2Title">Strategy & Blueprint</h4>
+          <p data-i18n="methodology.step2Desc">Crafting customized frameworks, governance roadmaps, and actionable implementation milestones.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-num-circle">03</div>
+          <h4 data-i18n="methodology.step3Title">Execution & Change</h4>
+          <p data-i18n="methodology.step3Desc">Guiding leaders and teams through structured transformation and institutional alignment.</p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-num-circle">04</div>
+          <h4 data-i18n="methodology.step4Title">Impact & Optimization</h4>
+          <p data-i18n="methodology.step4Desc">Measuring KPIs, institutionalizing new capabilities, and ensuring enduring results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT & CONSULTATION FORM ==================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-layout-grid">
+        <!-- Info Column -->
+        <div class="contact-info-col">
+          <span class="section-tag" data-i18n="contact.tag">Get in Touch</span>
+          <h2 data-i18n="contact.title">Let's Build Strategic Excellence Together</h2>
+          <p class="lead-desc" data-i18n="contact.desc">
+            Connect with our senior advisory team to discuss your organizational goals, request a formal proposal, or schedule an executive consultation.
+          </p>
+
+          <div class="contact-cards-stack">
+            <!-- Email -->
+            <div class="contact-meta-card">
+              <div class="meta-icon-badge">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              </div>
+              <div class="meta-details">
+                <h5 data-i18n="contact.emailLabel">Email Inquiries</h5>
+                <a href="mailto:contact@yadarconsulting.com">contact@yadarconsulting.com</a>
+              </div>
+            </div>
+
+            <!-- Hotline -->
+            <div class="contact-meta-card">
+              <div class="meta-icon-badge">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+              </div>
+              <div class="meta-details">
+                <h5 data-i18n="contact.phoneLabel">Advisory Hotline</h5>
+                <!-- غلط -->
+                <a href="tel:+966500000000">+966 50 000 0000</a>
+              </div>
+            </div>
+
+            <!-- Location -->
+            <div class="contact-meta-card">
+              <div class="meta-icon-badge">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              </div>
+              <div class="meta-details">
+                <h5 data-i18n="contact.locationLabel">Headquarters</h5>
+                <p data-i18n="contact.locationVal">Riyadh & GCC Operations</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp Direct Box -->
+          <div class="whatsapp-direct-box">
+            <div class="wa-text">
+              <h5 data-i18n="contact.whatsappBoxTitle">Instant WhatsApp Consultation</h5>
+              <p data-i18n="contact.whatsappBoxDesc">Direct chat with our principal consultants for rapid response.</p>
+            </div>
+            <a href="https://wa.me/966500000000?text=Hello%20YADAR%20Consulting%2C%20I%20am%20interested%20in%20your%20consulting%20services." target="_blank" rel="noopener noreferrer" class="wa-btn" data-i18n="contact.whatsappBtn">
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-card">
+          <div class="form-header">
+            <h3 data-i18n="contact.formTitle">Request a Consultation</h3>
+            <p data-i18n="contact.formSubtitle">Fill out the form below and an advisor will respond within 24 hours.</p>
+          </div>
+
+          <form id="consultation-form">
+            <div class="form-grid-row">
+              <div class="form-group">
+                <label for="contact-name" data-i18n="contact.fullName">Full Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. Abdullah Al-Mansoor" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-company" data-i18n="contact.companyName">Organization / Company</label>
+                <input type="text" id="contact-company" class="form-control" placeholder="e.g. Horizon Enterprises" required>
+              </div>
+            </div>
+
+            <div class="form-grid-row">
+              <div class="form-group">
+                <label for="contact-email" data-i18n="contact.emailAddress">Official Email Address</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="name@company.com" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-phone" data-i18n="contact.phoneNumber">Phone Number</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="+966 5X XXX XXXX" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-service-select" data-i18n="contact.serviceOfInterest">Service of Interest</label>
+              <select id="contact-service-select" class="form-control" required>
+                <option value="" disabled selected data-i18n="contact.selectPlaceholder">Select a consulting pillar...</option>
+                <option value="admin" data-i18n="contact.optAdmin">Administrative Consulting</option>
+                <option value="hr" data-i18n="contact.optHR">Human Resources Consulting</option>
+                <option value="marketing" data-i18n="contact.optMarketing">Marketing & Market Research</option>
+                <option value="all" data-i18n="contact.optAll">Integrated Advisory (Multiple Pillars)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" data-i18n="contact.projectBrief">Project Scope or Brief</label>
+              <textarea id="contact-message" class="form-control" data-i18n-ph="contact.projectPlaceholder" placeholder="Describe your strategic goals, current challenges, or desired timeline..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-form" id="btn-submit-contact">
+              <span data-i18n="contact.submitBtn">Submit Consultation Request</span>
+              <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER (Mockup Style) ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <!-- Brand Summary -->
+        <div class="footer-brand-col">
+          <div class="footer-brand-logo">
+            <div class="footer-brand-badge">
+              <img src="logo.jpeg" alt="YADAR Logo" width="38" height="38">
+            </div>
+            <div>
+              <span style="font-weight: 800; font-size: 1.25rem; color: #ffffff;">YADAR</span>
+              <span style="font-weight: 700; font-size: 1.15rem; color: var(--color-purple-300); margin-inline-start: 6px;">يدار</span>
+            </div>
+          </div>
+          <p class="footer-desc" data-i18n="footer.desc">
+            YADAR Consulting provides strategic administrative, human capital, and market advisory services tailored to drive sustainable institutional growth across the Middle East.
+          </p>
+
+          <!-- Social Links matching mockup (Facebook, X, Instagram, YouTube) -->
+          <div class="footer-social-row">
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="X (Twitter)">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer.quickLinks">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+            <li><a href="#about" data-i18n="nav.about">About Us</a></li>
+            <li><a href="#services" data-i18n="nav.services">Services</a></li>
+            <li><a href="#methodology" data-i18n="nav.methodology">Methodology</a></li>
+            <li><a href="#contact" data-i18n="nav.contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Sitemap -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer.servicesCol">Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services" onclick="openServiceModal('admin')" data-i18n="services.items.0.title">Administrative Consulting</a></li>
+            <li><a href="#services" onclick="openServiceModal('hr')" data-i18n="services.items.1.title">Human Resources Consulting</a></li>
+            <li><a href="#services" onclick="openServiceModal('marketing')" data-i18n="services.items.2.title">Marketing & Market Research</a></li>
+            <li><a href="#services">Change & Transformation</a></li>
+            <li><a href="#services">Executive Decision Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Direct Contact -->
+        <div>
+          <h4 class="footer-col-title" data-i18n="footer.contactCol">Direct Contact</h4>
+          <ul class="footer-links-list">
+            <li><span style="color: var(--color-purple-300);">Email:</span><br>contact@yadarconsulting.com</li>
+            <li><span style="color: var(--color-purple-300);">Phone:</span><br>+966 50 000 0000</li>
+            <li><span style="color: var(--color-purple-300);">Location:</span><br>Riyadh, Saudi Arabia</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          &copy; 2026 <span class="highlight">YADAR Consulting</span>. <span data-i18n="footer.rights">All rights reserved.</span>
+        </div>
+        <div>
+          <span style="opacity: 0.7;">Institutional Strategy • HR Excellence • Market Intelligence</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SERVICE DETAILS MODAL DRAWER ==================== -->
+  <div class="service-modal-overlay" id="service-modal-overlay" role="dialog" aria-modal="true">
+    <div class="service-modal-content">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close details">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+
+      <span class="modal-badge" id="modal-badge">Pillar 01</span>
+      <h3 class="modal-title" id="modal-title">Service Title</h3>
+      <p class="modal-desc" id="modal-desc">Service description goes here.</p>
+
+      <h4 class="modal-subservices-title">Specialized Scope & Deliverables:</h4>
+      <div class="modal-subservices-list" id="modal-subservices-list">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="modal-cta-row">
+        <button type="button" class="btn-primary-hero" id="modal-cta-btn" style="padding: 12px 28px; font-size: 0.95rem;">
+          Inquire About This Service
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
